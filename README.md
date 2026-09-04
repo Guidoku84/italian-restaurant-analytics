@@ -59,6 +59,8 @@ The cleaning process included:
 
 The cleaned datasets were then used for Python analysis, SQL queries, and Power BI reporting.
 
+The original client-provided files are intentionally excluded from the public repository because they contain confidential business information. The `data/raw/` directory is retained only to document the project workflow, while the anonymized analysis-ready files are available in `data/cleaned/`.
+
 ---
 
 ## Key Business Metrics
@@ -174,8 +176,8 @@ The notebooks are available in the [`notebooks`](notebooks/) directory.
 italian-restaurant-analytics/
 │
 ├── data/
-│   ├── raw/
-│   └── cleaned/
+│   ├── raw/                  # Original client data excluded for confidentiality
+│   └── cleaned/              # Anonymized analysis-ready datasets
 │
 ├── images/
 │   ├── dashboard_overview.png
@@ -190,12 +192,13 @@ italian-restaurant-analytics/
 │   ├── italian_restaurant_analytics.pbix
 │   └── italian_restaurant_analytics.pdf
 │
-├── report/
+├── report/                   # Client-facing report kept private
 │
 ├── sql/
 │
 ├── .gitignore
 ├── LICENSE
+├── requirements.txt
 └── README.md
 ```
 
@@ -209,8 +212,11 @@ To protect the client:
 
 - Employee names have been anonymized
 - Identifying business information is not presented in the public portfolio
+- Original source files in `data/raw/` are intentionally excluded from the public repository
 - The complete client-facing business report remains private
 - Sensitive information is excluded from public documentation
+
+The `data/cleaned/` directory contains anonymized datasets used for the public portfolio analysis.
 
 The repository is intended to demonstrate the **analytical methodology, technical workflow, and dashboard development process** rather than disclose confidential business information.
 
