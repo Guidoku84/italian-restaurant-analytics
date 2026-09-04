@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific exclusions
+
+# VS Code local settings
+.vscode/
+
+# Original confidential client data
+data/raw/*
+!data/raw/.gitkeep
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
